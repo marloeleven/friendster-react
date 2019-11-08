@@ -1,0 +1,22 @@
+.container {
+  background: transparent;
+  min-height: 2.571em;
+  font-size: 1.167em;
+  color: inherit;
+  outline: none;
+  padding: 0;
+  border: 0;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.container:not(:disabled) > * {
+  cursor: pointer !important;
+}
+
+.fullWidth {
+  min-width: 17.143em;
+  min-height: 3.214em;
+  display: flex;
+  align-items: center;
+}

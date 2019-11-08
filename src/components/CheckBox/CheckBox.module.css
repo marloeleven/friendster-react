@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  width: 1.167em;
+  height: 1.167em;
+  top: 0;
+  left: 0;
+  border: .083em solid;
+  border-radius: .167em;
+  appearance: none;
+  border-color: var(--text-white);
+  cursor: pointer;
+}
+
+.container:focus {
+  box-shadow: 0 0 .417em .083em var(--bg-brand-primary);  
+}
+
+.container:checked {
+  background-color: var(--bg-brand-primary);
+  border-color: var(--bg-brand-primary);
+}
+
+.container:checked::after {
+  position: absolute;
+  content: ' ';
+  width: .75em;
+  height: .333em;
+  top: .217em;
+  left: .15em;
+  border-left: .083em solid;
+  border-bottom: .083em solid;
+  transform: rotate(-45deg);
+  border-color: var(--text-white);
+}
